@@ -33,8 +33,9 @@ public class Customer {
 
     // add cash to cash on hand
     public void addCash(double cash) {
+        
         this.cashOnHand += cash;
-        System.out.println(name + "'s cash on hand is $" + cashOnHand);
+        System.out.printf(name + "'s cash on hand is $%,.2f\n", cashOnHand);
     }
 
     // get cash on hand
@@ -45,6 +46,6 @@ public class Customer {
     // buy snacks. Given the total cost of the snacks to be purchased, reduce the cash on hand by that amount
     public void buySnack(double total) {
         this.cashOnHand -= total;
-        System.out.println(name + "'s cash on hand is $" + cashOnHand);
+        System.out.printf(name + "'s cash on hand is $%,.2f\n",cashOnHand);
     }
 }

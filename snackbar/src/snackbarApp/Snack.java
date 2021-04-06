@@ -55,6 +55,7 @@ public class Snack {
 
     // get quantity
     public int getQuantity() {
+        
         return quantity;
     }
     
